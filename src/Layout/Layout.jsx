@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 
 function Layout({ children }) {
   const [isPanel, setPanel] = useState(false);
-  const location = useLocation(); // گرفتن مسیر فعلی
+  /*const location = useLocation(); // گرفتن مسیر فعلی
 
   useEffect(() => {
     if (location.pathname === "/user-panel") {
@@ -17,9 +17,9 @@ function Layout({ children }) {
       setPanel(false);
     }
   }, [location.pathname]); // فقط وقتی مسیر تغییر کرد، اجرا شود.
+  */
   return (
     <>
-      {console.log()}
       {isPanel ?
         <div>
           {children}
