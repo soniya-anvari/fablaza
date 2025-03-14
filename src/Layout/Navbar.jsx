@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import NavLinks from "../Components/NavLinks";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import ShoppingCart from "../assets/images/icons/Shopping-Cart.svg";
 import SaveLike from "../assets/images/icons/heart-solid.svg";
 import { SET_IS_OPEN } from "../features/cartSlice";
@@ -12,7 +12,7 @@ import Cart from "../Components/Cart";
 const Navbar = () => {
  // const products = useSelector((state) => state.products);
   const [open, setOpen] = useState(false);
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
   const location = useLocation();
   const { isOpen } = useSelector((state) => state.cartIsOpen);
   useEffect(() => {
@@ -106,7 +106,6 @@ const Navbar = () => {
             </div>
             <div className="flex items-center  gap-5 ">
               <div className="cursor-pointer" onClick={() => {
-                dispatch(SET_IS_OPEN(!isOpen))
               }}>
                 <p className='px-1 text-white text-[11px]  absolute top-[20px]  rounded-[50%] bg-purple_l'>
                   {/*products.count*/}
