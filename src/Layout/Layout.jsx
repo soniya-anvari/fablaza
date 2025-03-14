@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 import TopeBanner from "../Components/MainpageComponents/TopeBanner";
 import { useLocation } from "react-router-dom";
@@ -28,7 +27,7 @@ function Layout({ children }) {
 
         <div>
           <TopeBanner />
-          <Navbar />
+          {/*<Navbar />*/}
           {children}
           <Footer />
         </div>

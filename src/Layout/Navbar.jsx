@@ -14,7 +14,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   //const dispatch = useDispatch();
  // const location = useLocation();
-  const { isOpen } = useSelector((state) => state.cartIsOpen);
+ // const { isOpen } = useSelector((state) => state.cartIsOpen);
   useEffect(() => {
     console.log(open);
     if (open) {
@@ -115,10 +115,7 @@ const Navbar = () => {
               </div>
               {isOpen && (
                 <div
-                  className={`fixed transition-all duration-1000 ${isOpen
-                    ? "translate-x-0 opacity-100 "
-                    : "translate-x-full opacity-0 pointer-events-none"
-                    } overflow-y-auto top-0 right-0 w-80 h-full bg-white shadow-lg  `}>
+                  className={`fixed transition-all duration-1000  overflow-y-auto top-0 right-0 w-80 h-full bg-white shadow-lg  `}>
                   <Cart />
                 </div>
               )}
