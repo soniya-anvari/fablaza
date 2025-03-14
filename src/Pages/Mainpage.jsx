@@ -12,7 +12,7 @@ import Recommended from "../Components/MainpageComponents/Recommended";
 import ContactBox from "../Components/MainpageComponents/ContactBox";
 import SearchBar from "../Components/MainpageComponents/SearchBar";
 import Cart from "../Components/Cart";
-import BanerSoshal from "../Components/MainpageComponents/banerSoshal";
+import BanerSoshal from "../Components/MainpageComponents/BanerSoshal";
 
 function Mainpage() {
   return (
