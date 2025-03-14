@@ -13,7 +13,7 @@ const Navbar = () => {
  // const products = useSelector((state) => state.products);
   const [open, setOpen] = useState(false);
   //const dispatch = useDispatch();
-  const location = useLocation();
+ // const location = useLocation();
   const { isOpen } = useSelector((state) => state.cartIsOpen);
   useEffect(() => {
     console.log(open);
@@ -23,9 +23,7 @@ const Navbar = () => {
       document.body.style.overflow = "auto";
     }
   }, [open]);
-  useEffect(() => {
-    setOpen(false);
-  }, [location.pathname]);
+ 
 
   return (
     <nav className='bg-white'>
